@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="sort-container row">
+                    <div class="column-filter col-md-6">
+                        <label for="yearFilter">First registration (date): 2015-2023</label>
+                        <input type="range" id="yearFilter" name="yearFilter" min="2015" max="2023">
+                    </div>
+                    <div class="column-car col-md-6">
+                        <div class="radio-option">
+                            <input type="radio" id="carFilterSedan" name="bodyFilter" value="Sedan" />
+                            <label for="bodyFilterSedan">Sedan</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="carFilterCoupe" name="bodyFilter" value="Coupe" />
+                            <label for="bodyFilterCoupe">Coupe</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="carFilterSUV" name="bodyFilter" value="SUV" />
+                            <label for="bodyFilterSUV">SUV</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="all" name="bodyFilter" value="all" checked />
+                            <label for="bodyFilterAll">Sedan/Coupe/SUV</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="users-container">
+                    <div class="user">
+                        <div class="car-photo">
+                            <a class="img-fluid" href="assets/img/Alpina-F10.jpg" data-fancybox="">
+                                <img class="img-fluid" src="assets/img/Alpina-F10.jpg">
+                            </a>
+                        </div>
+                        <div class="car-info">
+                            <div class="car-name">Alpina B5 (F10)</div>
+                            <div class="car-body">Vehicle types: Sedan</div>
+                            <div class="car-registration-date">First registration: 2015</div>
+                            <div class="car-price">Price: 45000$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/fancybox.min.js"></script>
+</body>
+
+</html>
